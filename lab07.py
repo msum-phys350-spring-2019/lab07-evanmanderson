@@ -1,8 +1,13 @@
-#
-# PUT YOUR NAME HERE
-#
+"""
+Description:
+    Lab 07, Eigenvalues and Eigenvectors
+"""
 
-# add appropriate imports here
+__name__ = "Evan Anderson"
+__date__ = "5-7-2019"
+
+import matplotlib.pyplot as plt
+import numpy as np
 
 t_init = 0
 t_end = 10
@@ -36,16 +41,46 @@ def plot_motion_of_masses(x, time, title='bad title'):
     # Nothing special about these, but they look nice
     x1_equilibrium_pos = 3
     x2_equilibrium_pos = 6
-
+    
     x1 = x[:, 0] + x1_equilibrium_pos
     x2 = x[:, 1] + x2_equilibrium_pos
-
+    
     plt.plot(x1, time, label='Mass 1')
     plt.plot(x2, time, label='Mass 2')
     plt.xlim(0, 9)
     plt.legend()
     plt.title(title)
+    
+    
+def calc_frequencies_and_modes(matrix, k_over_m):
+    """
+    """
+    
+    return 1
+
+def calc_components_from_initial_conditions(x_init, modes):
+    """
+    """
+    a = 1
+    b = 1
+    
+    
+    return a, b
 
 
-## YOU FILL IN THE REST!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
